@@ -37,6 +37,71 @@
 
 
 #passwordGate{position:fixed;inset:0;z-index:300;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,rgba(255,115,159,.14),transparent 35%),#08050a;padding:24px;transition:opacity .7s,visibility .7s}#passwordGate.hide{opacity:0;visibility:hidden;pointer-events:none}.gate-box{width:min(520px,100%);padding:42px 28px;text-align:center;border:1px solid rgba(255,182,202,.2);border-radius:34px;background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,115,159,.025));box-shadow:0 35px 120px rgba(0,0,0,.55),0 0 80px rgba(255,75,140,.08);backdrop-filter:blur(18px)}.gate-heart{font-size:44px;animation:pulse 1.8s ease-in-out infinite}.gate-box h2{font-size:clamp(30px,6vw,48px);font-weight:500;margin:14px 0 8px}.gate-box .gate-sub{color:var(--muted);font-size:15px;line-height:1.7;margin:0 auto 24px}.hint{font-size:12px;color:var(--rose);line-height:1.7;margin:0 auto 20px;max-width:430px}.pass-row{display:flex;gap:10px;max-width:430px;margin:auto}.pass-row input{flex:1;min-width:0;border:1px solid rgba(255,182,202,.25);background:rgba(255,255,255,.05);color:white;border-radius:16px;padding:15px 16px;outline:none;font-size:14px}.pass-row input:focus{border-color:rgba(255,182,202,.55);box-shadow:0 0 0 4px rgba(255,115,159,.08)}.pass-btn{border:1px solid rgba(255,160,190,.4);color:white;background:linear-gradient(135deg,rgba(255,115,159,.25),rgba(255,255,255,.05));border-radius:16px;padding:0 20px;cursor:pointer;font:700 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}.error-msg{height:22px;margin-top:13px;color:#ff9ab8;font-size:12px}.shake{animation:shake .35s ease}@keyframes shake{25%{transform:translateX(-7px)}50%{transform:translateX(7px)}75%{transform:translateX(-4px)}}@keyframes pulse{50%{transform:scale(1.08)}}@media(max-width:520px){.pass-row{flex-direction:column}.pass-btn{height:50px}}
+
+/* MOBILE-FIRST POLISH */
+@media (max-width: 700px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  body{font-size:15px;line-height:1.7}
+  .cursor-glow{display:none!important}
+  #intro{padding:18px}
+  .intro-box{padding:20px 10px;width:100%}
+  .intro-box h1{font-size:clamp(48px,16vw,76px);margin:14px 0 18px}
+  .intro-box p{font-size:15px;line-height:1.7}
+  .enter{width:100%;max-width:300px;padding:15px 20px;margin-top:24px}
+  .hero{min-height:100svh;padding:70px 18px 45px}
+  .hero-inner{width:100%}
+  .eyebrow{font-size:8px;letter-spacing:.24em}
+  .hero h2{font-size:16px;margin-top:12px}
+  .hero h1{font-size:clamp(58px,20vw,88px);margin:16px 0 20px;line-height:.88}
+  .hero .sub{font-size:16px;line-height:1.7}
+  .scroll{margin-top:30px}
+  .section{width:100%;padding:64px 14px}
+  .section-head{margin-bottom:24px}
+  h3.title{font-size:clamp(36px,12vw,52px);line-height:1.02}
+  .lead{font-size:16px;line-height:1.7}
+  .letter-wrap{border-radius:24px}
+  .letter{border-radius:23px;padding:24px 18px}
+  .letter:after{font-size:80px;right:8px;top:6px}
+  .letter p{font-size:16px;line-height:1.82;margin-bottom:18px}
+  .letter p:first-child:first-letter{font-size:2.7em}
+  .signature{font-size:20px!important}
+  .chapter-grid,.promise,.tear{grid-template-columns:1fr}
+  .chapter{min-height:auto;padding:22px 18px;border-radius:22px}
+  .chapter h4{font-size:23px}
+  .emotion,.tear-card,.promise-card,.vow{border-radius:22px;padding:22px 18px}
+  .gallery{columns:1;margin-top:22px}
+  .memory{margin-bottom:14px;border-radius:20px}
+  .memory img{width:100%;height:auto}
+  figcaption{padding:10px 12px 13px}
+  figcaption b{font-size:14px}
+  .video-shell{border-radius:22px;overflow:hidden;width:100%}
+  .video-shell video{display:block;width:100%;height:auto;max-height:70svh;object-fit:contain}
+  .video-note{font-size:13px!important}
+  .countdown{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .time{padding:16px 8px;border-radius:18px}
+  .time .num{font-size:30px}
+  .time .label{font-size:8px}
+  .lb-prev,.lb-next{width:42px;height:42px}
+  .lb-prev{left:8px}.lb-next{right:8px}
+  .lb-close{top:12px;right:12px;width:40px;height:40px}
+  .lb-caption{bottom:14px;left:14px;right:14px;font-size:13px}
+  #passwordGate{padding:16px}
+  .gate-box{padding:30px 18px;border-radius:26px}
+  .gate-heart{font-size:38px}
+  .gate-box h2{font-size:34px}
+  .gate-box .gate-sub{font-size:14px}
+  .hint{font-size:11px}
+  .pass-row{gap:9px}
+  .pass-row input{font-size:14px;padding:14px}
+  .pass-btn{height:50px;width:100%}
+}
+@media (max-width:380px){
+  .hero h1{font-size:56px}
+  .section{padding-left:12px;padding-right:12px}
+  .letter{padding:21px 16px}
+  .letter p{font-size:15px}
+  .intro-box h1{font-size:48px}
+}
 </style>
 </head>
 <body>
